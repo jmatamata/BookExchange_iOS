@@ -1,0 +1,44 @@
+//
+//  ProfileEditor.swift
+//  CS4540_Project
+//
+//  Created by Jorge Mata Jr on 8/3/22.
+//
+
+import SwiftUI
+
+struct ProfileEditor: View {
+    @Binding var profile: Profile
+    
+    var body: some View {
+        List {
+            HStack {
+                Text("User Name: ")
+                Divider()
+                TextField("User Name: ", text: $profile.username)
+            }
+            
+            Toggle(isOn: $profile.prefersNotifications) {
+                Text("Enable Notification")
+            }
+            
+            VStack {
+                Text("Seasonal Photo")
+                Picker("Seasonal Photo", selection: $profile.seasonalPhoto) {
+                    ForEach(Profile.Season.allCases) {
+                        season in Text(season.rawValue).tag(season)
+                    }
+                }.pickerStyle(.segmented)
+            }
+            DatePicker(selection: $profile.updateDate, displayedComponents: .date) {
+                Text("Last Update Date")
+            }
+        }
+    }
+}
+
+struct ProfileEditor_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileEditor(profile: .constant(.default))
+    }
+}
