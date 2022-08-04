@@ -12,7 +12,7 @@ struct BookExchangeRow: View {
     
     var body: some View {
         HStack {
-            bookExchangeItem.image.resizable().frame(width: 82, height: 110)
+            bookExchangeItem.image.resizable().frame(width: 71, height: 110)
             Text(bookExchangeItem.name)
             Spacer()
             Text(bookExchangeItem.price)
