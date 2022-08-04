@@ -38,7 +38,7 @@
 		2A78B246289A75CC00906561 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		2A78B248289A76C200906561 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		2A78B24A289A770100906561 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
-		2ADCE75A2891E7E600E9B834 /* CS4540_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CS4540_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADCE75A2891E7E600E9B834 /* Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADCE75D2891E7E600E9B834 /* CS4540_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS4540_ProjectApp.swift; sourceTree = "<group>"; };
 		2ADCE75F2891E7E600E9B834 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2ADCE7612891E7E800E9B834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		2ADCE75B2891E7E600E9B834 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2ADCE75A2891E7E600E9B834 /* CS4540_Project.app */,
+				2ADCE75A2891E7E600E9B834 /* Exchange.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			);
 			name = CS4540_Project;
 			productName = CS4540_Project;
-			productReference = 2ADCE75A2891E7E600E9B834 /* CS4540_Project.app */;
+			productReference = 2ADCE75A2891E7E600E9B834 /* Exchange.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -340,7 +340,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "MW.CS4540-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Exchange;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,7 +368,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "MW.CS4540-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Exchange;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
