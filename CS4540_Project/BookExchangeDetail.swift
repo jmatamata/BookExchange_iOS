@@ -34,6 +34,8 @@ struct BookExchangeDetail: View {
               .foregroundColor(.secondary)
               
               Divider()
+                
+                Text("by: \(bookExchangeItem.author)").padding(.bottom, 5)
               
               Text("About \(bookExchangeItem.name)")
                   .font(.title2)
