@@ -23,7 +23,7 @@ struct CategoryRow: View {
                     NavigationLink {
                         BookExchangeDetail(bookExchangeItem: b)
                     } label: {
-                        CategoryItem(bookExchangeItem: b)
+                        CategoryItem(bookExchangeItem: b).padding()
                     }
                 }
              }

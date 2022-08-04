@@ -17,6 +17,7 @@ struct BookExchangeListItem: Hashable, Codable, Identifiable {
     var description: String
     var isFeatured: Bool
     var isFavorite: Bool
+    var author: String
     private var imageName: String
     
     var category: Category

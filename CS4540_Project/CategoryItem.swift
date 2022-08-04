@@ -12,9 +12,14 @@ struct CategoryItem: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            bookExchangeItem.image.cornerRadius(10)
+            bookExchangeItem.image.resizable()
+                .cornerRadius(10)
+                .scaledToFit()
+                .frame(width: 100, height: 150)
+                .clipped()
+                .listRowInsets(EdgeInsets())
             Text(bookExchangeItem.name).foregroundColor(.primary).font(.caption)
-        }
+        }.frame(width: 100)
     }
 }
 

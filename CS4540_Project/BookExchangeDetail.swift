@@ -17,7 +17,7 @@ struct BookExchangeDetail: View {
     
     var body: some View {
         ScrollView {
-            CircleImage(image: bookExchangeItem.image)
+            CircleImage(image: bookExchangeItem.image).padding(.bottom, -80).padding(.top, -70)
             
             VStack(alignment: .leading) {
               

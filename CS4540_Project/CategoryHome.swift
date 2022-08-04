@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
-        
+    @Environment(\.dismiss) private var dismiss
     @State private var showingProfile = false
     
     var body: some View {
@@ -39,7 +39,8 @@ struct CategoryHome: View {
             }
             .sheet(isPresented: $showingProfile) {
                 ProfileHost()
-            }
+                Spacer()
+            }.id(UUID())
         }
     }
 }
